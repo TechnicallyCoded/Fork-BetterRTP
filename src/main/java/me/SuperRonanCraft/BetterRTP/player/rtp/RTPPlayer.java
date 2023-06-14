@@ -87,6 +87,7 @@ public class RTPPlayer {
         //Valid location?
         if (tpLoc != null && checkDepends(tpLoc)) {
             tpLoc.add(0.5, 0, 0.5); //Center location
+            // Check if has money to do this
             if (getPl().getEco().charge(player, worldPlayer)) {
                 tpLoc.setYaw(player.getLocation().getYaw());
                 tpLoc.setPitch(player.getLocation().getPitch());
